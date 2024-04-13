@@ -1,6 +1,7 @@
 var objectAreas = {
     junior: document.getElementById("map_junior_park"),
     senior: Array.from(document.getElementsByClassName("map_senior_blocks")),
+    senior_startArea: Array.from(document.getElementsByClassName("map_senior_startareas")),
     elementary1: Array.from(document.getElementsByClassName("map_elementary_vegetables")),
     elementary2: document.getElementById("map_elementary_green_and_dirts")
 }
@@ -20,13 +21,27 @@ function random() {
     })
 
     // senior
+    objectAreas.senior_startArea.forEach(area => {
+        area.children[0]?.remove();
+    })
     objectAreas.senior.forEach(div => {
         div.children[0]?.remove();
     })
-    randomColorArray(["blue", "green"], 3).forEach((color, index) => {
+
+    const startArea = Math.floor(Math.random() * 2); // 0 or 1
+
+    const check = document.createElement("img");
+    check.src = "./media/check.png";
+    objectAreas.senior_startArea[startArea].append(check);
+
+    randomColorArray(["blue", "green"], 4).forEach((color, index) => {
         const img = document.createElement("img");
         img.src = `./media/${color}.jpg`;
-        objectAreas.senior[index].append(img);
+        if (index <= 1 && startArea == 1) {
+            objectAreas.senior[index].append(img);
+        } else {
+            objectAreas.senior[index + 2].append(img);
+        }
     })
 
     // elementary1 紅色黃色蔬菜

@@ -37,7 +37,9 @@
 .map_senior_blocks {
     height: 4.5%;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 .map_senior_blocks>img {
     position: absolute;
@@ -73,6 +75,47 @@
 .map_senior_blocks:nth-child(6) {
     left: 3.1%;
     top: 27.5%;
+}
+
+.map_senior_blocks:nth-child(7) {
+    left: 86.1%;
+    top: 10.6%;
+}
+
+.map_senior_blocks:nth-child(8) {
+    left: 86.1%;
+    top: 19.3%;
+}
+
+.map_senior_blocks:nth-child(9) {
+    left: 93%;
+    top: 72.8%;
+}
+
+.map_senior_blocks:nth-child(10) {
+    left: 93%;
+    top: 81.5%;
+}
+
+.map_senior_startareas {
+    height: 24%;
+    width: 11.8%;
+    position: absolute;
+}
+
+.map_senior_startareas>img {
+    height: 100%;
+}
+
+.map_senior_startareas:nth-child(11) {
+    left: 63.2%;
+    top: 4.5%;
+}
+
+
+.map_senior_startareas:nth-child(12) {
+    left: 25.2%;
+    top: 71.3%;
 }
 
 /* elementary */
