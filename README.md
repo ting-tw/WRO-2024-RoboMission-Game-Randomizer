@@ -5,3 +5,5 @@ It supports **Elementary**, **Junior High**, and **Senior High** categories.
 
 👉 [Offical Website](https://dev.ofdl.tw/wro/)  
 👉 [WRO 2025 Version](https://github.com/ting-tw/WRO-2025-RoboMission-Game-Randomizer/)
+
+![preview](./preview.png)
